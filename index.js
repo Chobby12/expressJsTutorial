@@ -1,9 +1,10 @@
-const cors = require('cors');
-app.use(cors());
 const express = require('express')
+const cors = require('cors');
 const app = express()
 const {people, products} = require('./data')
 const port = 5000
+
+app.use(cors());
 
 app.get('/',(req, res)=>{
     res.send(`<h1>Home Page</h1><a href='/api/v1/products'>Products</a>`)
