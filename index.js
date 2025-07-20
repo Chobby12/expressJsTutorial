@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors');
 const app = express()
 const {people, products} = require('./data')
-const port = 5000
+const port = process.env.port||5000
 
 app.use(cors());
 
