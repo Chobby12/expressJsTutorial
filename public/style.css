@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    /* background: linear-gradient(45deg, blue, dodgerblue, #fff);
+     */
+    background: url('./background.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.screen{
+    background: #fff;
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #121212;
+}
+.header{
+    background: #121212;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 2px solid orangered;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease .5s;
+}
+
+.screen h1{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.msg p{
+    padding: 14px;
+    text-align: justify;
+    font-weight: 400;
+}
+.panel{
+    display: none;
+}
+.active, .header:hover{
+    background: orangered;   
+}
+.header .p{
+    /* color: red; */
+    font-size: 1.3rem;
+}
